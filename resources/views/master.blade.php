@@ -13,9 +13,12 @@
 
 </head>
 <body>
+	
 	{{View::make('header')}}
 	@yield('content')
+	<br><br><br><br><br>
 	{{View::make('footer')}}	
+
 </body>
 <style>
 	.custom-login{
@@ -28,7 +31,6 @@
 	.custom-product{
 		height: 600px;
 	    /*background-color: #466346a8;*/
-
 	}
 	.slider-text{
 	    background-color: #466346a8;
@@ -44,6 +46,12 @@
 	}
 	.tranding-wrapper{
 		margin: 30px;
+	}
+	.detail-img{
+		height: 200px;
+	}
+	.container{
+		width: 100%;
 	}
 </style>
 

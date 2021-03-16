@@ -18,9 +18,9 @@
         <li class=""><a href="#">Orders</a></li>
        
       </ul>
-      <form class="navbar-form navbar-left">
+      <form action="/search" class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" style="width: 800px;" name="query" class="form-control search-box" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
