@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+
 use Illuminate\Http\Request;
 
 class UserAuth
@@ -16,10 +17,13 @@ class UserAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!$request->path()=='login' && $request->session()->has('user'))
+        if ($request->session()->has('user'))
         {
-            return redirect('product');
+            // $request->session()->flash('error','acces denied');
+            return redirect('/login');
         }
+       
         return $next($request);
     }
+
 }

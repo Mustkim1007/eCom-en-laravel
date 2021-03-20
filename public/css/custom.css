@@ -1,0 +1,36 @@
+
+	.custom-login{
+		height: 500px;
+		padding-top: 100px;
+	}
+	img.slider-img{
+		height: 400px !important
+	}
+	.custom-product{
+		height: 600px;
+	    /*background-color: #466346a8;*/
+	}
+	.slider-text{
+	    background-color: #466346a8;
+	}
+	.tranding-image
+	{
+		height: 100px;
+	}
+	.tranding-item
+	{
+		float: left;
+		width: 20%;
+	}
+	.tranding-wrapper{
+		margin: 30px;
+	}
+	.detail-img{
+		height: 200px;
+	}
+	.container{
+		width: 100%;
+	}
+	.search-box{
+		width: 500px !important;
+	}

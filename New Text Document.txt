@@ -1,1 +1,32 @@
 https://www.youtube.com/watch?v=cD-0Ro4Dg_I&list=PL8p2I9GklV47EWeJZlC-_dgj7kdBWYd56&index=10
+
+function mobileNumber(inputText)
+{
+	var numberformat = /^[0]?[789]\d{9}$/;
+	if(inputText.value.match(numberformat))
+	{
+		document.myForm.mobile_no.focus();
+		return true;
+	}
+	else
+	{
+		alert("You have entered an invalid mobile no !");
+		document.myForm.mobile_no.focus();
+		return false;
+	}
+}
+
+function ValidateEmail(inputText)
+{
+	var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	if(inputText.value.match(mailformat))
+	{
+		return true;
+	}
+	else
+	{
+		alert("You have entered an invalid email address!");
+		document.myForm.email.focus();
+		return false;
+	}
+}
